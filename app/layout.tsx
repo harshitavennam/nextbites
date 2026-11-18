@@ -4,8 +4,9 @@ import "./globals.css";
 import NavBar from "./components/NavBar";
 
 export const metadata: Metadata = {
-  title: "NextBites | Good food, made simple",
-  description: "Find fresh, approachable recipes for every kind of day with NextBites."
+  title: "NextBites | Fresh, Simple Recipes for Every Day",
+  description:
+    "Discover easy, feel-good recipes for breakfast, lunch, dinner, and dessert. Explore ingredients, preparation steps, cooking times, and inspiration for your next meal.",
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
