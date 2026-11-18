@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import "./globals.css";
 import NavBar from "./components/NavBar";
 
@@ -26,5 +27,5 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
 }
 
 function LinkToHome() {
-  return <a className="footer-brand" href="/">next<span>bites.</span></a>;
+  return <Link className="footer-brand" href="/">next<span>bites.</span></Link>;
 }
