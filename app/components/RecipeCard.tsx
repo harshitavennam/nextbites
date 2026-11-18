@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import type { Recipe } from "../data/recipes";
 
 type RecipeCardProps = {
@@ -7,7 +8,11 @@ type RecipeCardProps = {
 
 export default function RecipeCard({ recipe }: RecipeCardProps) {
   return (
-    <article className="recipe-card">
+    <Link
+      className="recipe-card"
+      href={`/recipe/${recipe.id}`}
+      aria-label={`View recipe: ${recipe.title}`}
+    >
       <div className="recipe-image-wrap">
         <Image
           src={recipe.image}
@@ -26,10 +31,10 @@ export default function RecipeCard({ recipe }: RecipeCardProps) {
         </div>
         <h3>{recipe.title}</h3>
         <p>{recipe.description}</p>
-        <a className="recipe-link" href={`#recipe-${recipe.id}`} aria-label={`View ${recipe.title}`}>
+        <span className="recipe-link">
           Explore recipe <span aria-hidden="true">→</span>
-        </a>
+        </span>
       </div>
-    </article>
+    </Link>
   );
 }

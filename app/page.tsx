@@ -1,5 +1,5 @@
 import Image from "next/image";
-import RecipeCard from "./components/RecipeCard";
+import RecipeGrid from "./components/RecipeGrid";
 import { recipes } from "./data/recipes";
 
 const categories = ["Breakfast", "Lunch", "Dinner", "Dessert"];
@@ -44,9 +44,7 @@ export default function HomePage() {
           </div>
           <p>Everyday ingredients. Unforgettable bites.</p>
         </div>
-        <div className="recipe-grid">
-          {recipes.map((recipe) => <RecipeCard key={recipe.id} recipe={recipe} />)}
-        </div>
+        <RecipeGrid recipes={recipes} />
       </section>
     </main>
   );

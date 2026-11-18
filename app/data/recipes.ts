@@ -10,7 +10,7 @@ export type Recipe = {
   difficulty: "Easy" | "Medium" | "Hard";
   rating: number;
   ingredients: string[];
-  instructions: string[];
+  steps: string[];
 };
 
 export const recipes: Recipe[] = [
@@ -26,7 +26,7 @@ export const recipes: Recipe[] = [
     difficulty: "Easy",
     rating: 4.9,
     ingredients: ["2 slices sourdough", "1 ripe avocado", "1 tsp lemon juice", "Cherry tomatoes", "Salt and pepper"],
-    instructions: ["Toast the sourdough until golden.", "Mash avocado with lemon, salt and pepper.", "Spread over toast and finish with sliced tomatoes."]
+    steps: ["Toast the sourdough until golden.", "Mash avocado with lemon, salt and pepper.", "Spread over toast and finish with sliced tomatoes."]
   },
   {
     id: 2,
@@ -40,7 +40,7 @@ export const recipes: Recipe[] = [
     difficulty: "Easy",
     rating: 4.8,
     ingredients: ["1 cup cooked quinoa", "1 cucumber", "1 carrot", "1 cup chickpeas", "2 tbsp tahini"],
-    instructions: ["Cook quinoa according to the packet.", "Chop the vegetables and rinse chickpeas.", "Arrange everything in bowls and drizzle with tahini."]
+    steps: ["Cook quinoa according to the packet.", "Chop the vegetables and rinse chickpeas.", "Arrange everything in bowls and drizzle with tahini."]
   },
   {
     id: 3,
@@ -54,7 +54,7 @@ export const recipes: Recipe[] = [
     difficulty: "Easy",
     rating: 4.9,
     ingredients: ["250 g pasta", "1 cup tomato passata", "2 garlic cloves", "1/3 cup cream", "Fresh basil"],
-    instructions: ["Boil pasta in salted water until al dente.", "Sauté garlic, add passata and simmer for 8 minutes.", "Stir in cream and basil, then toss with drained pasta."]
+    steps: ["Boil pasta in salted water until al dente.", "Sauté garlic, add passata and simmer for 8 minutes.", "Stir in cream and basil, then toss with drained pasta."]
   },
   {
     id: 4,
@@ -68,7 +68,7 @@ export const recipes: Recipe[] = [
     difficulty: "Medium",
     rating: 4.7,
     ingredients: ["1 cup flour", "1 tbsp sugar", "1 tsp baking powder", "1 egg", "3/4 cup milk", "Mixed berries"],
-    instructions: ["Whisk flour, sugar and baking powder.", "Add egg and milk and mix until just combined.", "Cook small portions on a warm pan and serve with berries."]
+    steps: ["Whisk flour, sugar and baking powder.", "Add egg and milk and mix until just combined.", "Cook small portions on a warm pan and serve with berries."]
   },
   {
     id: 5,
@@ -82,7 +82,7 @@ export const recipes: Recipe[] = [
     difficulty: "Easy",
     rating: 4.6,
     ingredients: ["1 can chickpeas", "2 tortillas", "1 tsp paprika", "Lettuce", "4 tbsp yoghurt"],
-    instructions: ["Drain chickpeas and toss with paprika.", "Pan-fry until crisp, about 10–12 minutes.", "Fill tortillas with lettuce, chickpeas and yoghurt."]
+    steps: ["Drain chickpeas and toss with paprika.", "Pan-fry until crisp, about 10–12 minutes.", "Fill tortillas with lettuce, chickpeas and yoghurt."]
   },
   {
     id: 6,
@@ -96,6 +96,6 @@ export const recipes: Recipe[] = [
     difficulty: "Medium",
     rating: 4.9,
     ingredients: ["150 g dark chocolate", "2 eggs, separated", "1 tbsp sugar", "1/2 cup whipping cream"],
-    instructions: ["Melt chocolate gently and let it cool slightly.", "Whip cream to soft peaks and whisk egg whites with sugar.", "Fold chocolate, cream and egg whites together; chill for 2 hours."]
+    steps: ["Melt chocolate gently and let it cool slightly.", "Whip cream to soft peaks and whisk egg whites with sugar.", "Fold chocolate, cream and egg whites together; chill for 2 hours."]
   }
 ];
