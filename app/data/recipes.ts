@@ -88,7 +88,7 @@ export const recipes: Recipe[] = [
     id: 6,
     title: "Dark Chocolate Mousse",
     description: "An airy, rich chocolate dessert made for slow evenings and small celebrations.",
-    image: "https://images.unsplash.com/photo-1511715112108-9acc2b8c2c7a?w=900&q=85",
+    image: "https://images.unsplash.com/photo-1777897396228-8b1d68cc51a6?auto=format&fit=crop&fm=jpg&ixid=NHwxMjA3fDA%3D&ixlib=rb-4.1.0&q=60&w=1200",
     category: "Dessert",
     prepTime: 15,
     cookTime: 5,
