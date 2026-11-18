@@ -49,7 +49,7 @@ export default function RecipeGrid({ recipes }: RecipeGridProps) {
         <div className="empty-state" role="status">
           <span aria-hidden="true">⌕</span>
           <h3>No recipes found</h3>
-          <p>We couldn't find a match for “{searchTerm}”. Try another ingredient or recipe name.</p>
+          <p>We couldn&apos;t find a match for “{searchTerm}”. Try another ingredient or recipe name.</p>
           <button type="button" onClick={() => setSearchTerm("")}>
             Clear search
           </button>
