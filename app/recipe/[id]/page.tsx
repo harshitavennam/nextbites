@@ -51,7 +51,7 @@ export default async function RecipeDetailPage({ params }: RecipeDetailPageProps
 
         <section className="detail-content">
           <div className="ingredients-panel">
-            <span className="eyebrow">WHAT YOU'LL NEED</span>
+            <span className="eyebrow">WHAT YOU&apos;LL NEED</span>
             <h2>Ingredients</h2>
             <ul>
               {recipe.ingredients.map((ingredient) => (
@@ -60,7 +60,7 @@ export default async function RecipeDetailPage({ params }: RecipeDetailPageProps
             </ul>
           </div>
           <div className="steps-panel">
-            <span className="eyebrow">LET'S GET COOKING</span>
+            <span className="eyebrow">LET&apos;S GET COOKING</span>
             <h2>Steps</h2>
             <ol>
               {recipe.steps.map((step, index) => (
