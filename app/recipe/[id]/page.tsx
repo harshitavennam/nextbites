@@ -7,16 +7,23 @@ type RecipeDetailPageProps = {
   params: Promise<{ id: string }>;
 };
 
+// Pre-render every known recipe so the detail pages work with static export.
 export function generateStaticParams() {
   return recipes.map((recipe) => ({ id: String(recipe.id) }));
 }
 
 export default async function RecipeDetailPage({ params }: RecipeDetailPageProps) {
   const { id } = await params;
+
+  // Reject malformed IDs before looking up a recipe.
+  if (!/^\d+$/.test(id)) {
+    notFound();
+  }
+
   const recipeId = Number(id);
   const recipe = recipes.find((item) => item.id === recipeId);
 
-  if (!Number.isInteger(recipeId) || !recipe) {
+  if (!Number.isSafeInteger(recipeId) || !recipe) {
     notFound();
   }
 
