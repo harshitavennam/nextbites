@@ -7,6 +7,10 @@ type RecipeDetailPageProps = {
   params: Promise<{ id: string }>;
 };
 
+export function generateStaticParams() {
+  return recipes.map((recipe) => ({ id: String(recipe.id) }));
+}
+
 export default async function RecipeDetailPage({ params }: RecipeDetailPageProps) {
   const { id } = await params;
   const recipeId = Number(id);
